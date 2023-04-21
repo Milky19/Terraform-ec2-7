@@ -9,13 +9,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "Ajay" {
-  ami                    = "ami-01216e7612243e0ef"
+  ami                    = "ami-069aabeee6f53e7bf"
   instance_type          = "t2.micro"
-  key_name               = "mumbai"
+  key_name               = "new"
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
   user_data              = file("website.sh")
   tags = {
