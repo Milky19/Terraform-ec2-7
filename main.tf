@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "Ajay" {
+resource "aws_instance" "Krishna" {
   ami                    = "ami-069aabeee6f53e7bf"
   instance_type          = "t2.micro"
   key_name               = "new"
@@ -63,6 +63,6 @@ resource "aws_security_group" "ec2_security_group" {
   }
 
   tags = {
-    Name = "Aj_sg"
+    Name = "krishna"
   }
 }
