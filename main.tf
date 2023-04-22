@@ -9,11 +9,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_instance" "Krishna" {
-  ami                    = "ami-069aabeee6f53e7bf"
+  ami                    = "ami-06fc49795bc410a0c"
   instance_type          = "t2.micro"
   key_name               = "new"
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
